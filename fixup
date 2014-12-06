@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 
 import re
+import sys
 
-input = "theego.tex"
-output = "output.tex"
+_, input = sys.argv
+output = input.replace(".tex", ".new.tex")
 
 def save(new):
     with file(output, 'w') as f:
