@@ -1,0 +1,11 @@
+#!/bin/bash
+
+TGT=theego
+
+set -eux
+
+make clean
+make
+rm -f ${TGT}.dvi
+make
+
